@@ -57,6 +57,52 @@ EDC bit 적음 → 오류 검출 능력 감소, overhead 감소
 
 ### Single-bit parity 
 
+Detection만 가능 -> 1의 개수가 짝수인지 홀수인지만 판별 
+```
+Data: 1011
+1의 개수: 3개
+Even parity bit: 1
+
+전체: 10111
+1의 개수: 4개
+```
 
 
 ### Two-dimensional parity 
+
+행과 열을 같이 확인 -> Correction도 가능 
+
+
+
+
+# Multiple Access Link
+
+Link의 두 종류 
+- Point - to - point : 두 node 직접 연결, 전용 !!
+- Broadcast : 여러 node가 같은 link를 공유 (Wi-Fi, 위성 통신)
+
+broadcast의 경우 두 node가 동시에 통신 -> 충돌 -> frame 손상 
+따라서 Multiple Access Protocol 필요 
+
+
+
+
+# Multiple Access Protocol 
+
+### Channel partitioning
+
+미리 자원을 나눠주는 방식이다. 
+- Time-Division MA : 시간 분할
+  - 일정한 round로 동작, 각 node는 각 round에서 고정된 길이의 slot을 얻어 전송할 수 있음 
+  
+- Frequenct-division MA : 주파수 분할
+  - 채널이 주파수 band로 나눠짐, 각 node는 고정된 주파수 band 할당받음 
+  
+충돌이 적지만 보낼 데이터가 없는 경우 자원이 낭비된다. 
+
+
+### Random access
+미리 자원을 나누지 않고 node가 보낼 data가 있으면 channel에 접근한다. 
+자원을 더 유용하게 사용할 수 있지만, 충돌을 완전히 없애지는 못함 
+
+
