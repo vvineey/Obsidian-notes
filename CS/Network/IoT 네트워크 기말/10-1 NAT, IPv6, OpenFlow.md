@@ -47,14 +47,16 @@ IPv6는 128-bits 주소
 
 
 # IPv6 Datagram Format
+
 ![[Pasted image 20260608155106.png|561]]
 
 #IPv4_header 에 비해 크기가 작아짐 
-- checksum 없음 
-- option 없음 
-- fragmentation/reassembly 없음 
+- checksum 없음 -> router 처리 속도 향상
+- option 없음 -> 기본 herder 단순화 
+- fragmentation/reassembly 없음 -> router 처리 단순화 
 
 -> Router가 packet을 더 빠르고 단순하게 처리하도록 header 구조도 바꿨다!
+
 
 
 # Generalized Forwarding
@@ -64,6 +66,14 @@ Generalized forwarding은 **Match + Action 방식
 
 ### Match
 Header field에서 특정 pattern을 찾는다.
+
+```
+source IP
+destination IP
+TCP/UDP port
+protocol type
+flow label
+```
 
 ### Action
 Match된 packet에 대해 행동을 수행한다.
@@ -76,15 +86,20 @@ send to controller
 ```
 
 
-
-
 # Flow Table과 Priority
+
 generalized forwarding은 forwarding table이 아니라 **flow table**을 사용한다.
-근데 하나의 Packet이 여러 rule에 걸리면? 
-LPM으로 판단 
+근데 하나의 Packet이 여러 rule에 걸리면 -> rule마다 우선순위를 정하고 결정함 
 
 
 
 # OpenFlow
 
+Generalized Forwarding을 실제 프로토콜로 구현한 방식중 하나!
+header field에서 패턴을 찾아 특정 actiond을 수행하게 함 
 
+
+![[Pasted image 20260608161551.png|513]]
+
+OpenFlow는 SDN 연관지어서 
+SDN Controller -> flow table 계산 -> OpenFlow switch가 match + action 수행
