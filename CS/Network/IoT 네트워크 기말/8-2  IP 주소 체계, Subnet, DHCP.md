@@ -9,7 +9,7 @@
 
 Transport layer의 segment + IP header -> IP datagram가 된다. 
 
-IP header에는 
+#IPv4_header 에는
 - source IP address
 - destination IP address
 - TTL : router를 지날 때마다 하나씩 감소 0이 되면 폐기 

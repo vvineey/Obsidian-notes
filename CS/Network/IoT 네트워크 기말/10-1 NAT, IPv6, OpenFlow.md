@@ -29,20 +29,60 @@ private IP + 내부 port <-> public IP + NAT가 새로 고른 port
 장점 
 - ISP로부터 하나의 public IP만 받아도 local network의 여러 장치가 인터넷 사용 가능 
 - Local network  안의 host 주소를 외부에 알리지 않고 변경 가능 
-- 
+- 외부에서 내부 장치 노출이 되지 않아 보안측면 이점 있음 
 
 단점 
+- 원래 인터넷은 end-to-end 통신 구조인데 NAT가 중간에서 주소와 port를 변경하므로 
+  원칙이 약해짐 
+- 외부에서 내부 host로 접속하기 어려움 따라서 port forwarding 설정 필요 
+
 
 # IPv6
+IPv6는 128-bits 주소 
+
+왜 필요 ?
+- IPv4의 주소 공간 부족 
+- IP header 크기를 줄여 전송 효율 향상
+- Flow에 따라  network layer에서 다르게 처리 가능성 
 
 
 # IPv6 Datagram Format
+![[Pasted image 20260608155106.png|561]]
+
+#IPv4_header 에 비해 크기가 작아짐 
+- checksum 없음 
+- option 없음 
+- fragmentation/reassembly 없음 
+
+-> Router가 packet을 더 빠르고 단순하게 처리하도록 header 구조도 바꿨다!
 
 
 # Generalized Forwarding
 
+목적지 기반 forwarding은 목적지 IP주소를 보고 output link 결정 
+Generalized forwarding은 **Match + Action 방식
+
+### Match
+Header field에서 특정 pattern을 찾는다.
+
+### Action
+Match된 packet에 대해 행동을 수행한다.
+
+```
+forward
+drop
+modify header
+send to controller
+```
+
+
+
 
 # Flow Table과 Priority
+generalized forwarding은 forwarding table이 아니라 **flow table**을 사용한다.
+근데 하나의 Packet이 여러 rule에 걸리면? 
+LPM으로 판단 
+
 
 
 # OpenFlow
