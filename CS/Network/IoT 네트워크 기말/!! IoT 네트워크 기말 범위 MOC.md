@@ -10,8 +10,8 @@
 - [ ] [[11-2 Distance Vector, SDN]]
 
 ## III. Link Layer와 IoT Access Network
-- [ ] [[W12-1_Link Layer Multiple Access]]
-- [ ] [[W12-2_Slotted ALOHA CSMA IoT Access]]
+- [ ] [[12-1 Link Layer Multiple Access]]
+- [ ] [[12-2 Slotted ALOHA CSMA IoT Access]]
 
 ## IV. Wi-Fi
 - [ ] [[W13-2_Wi-Fi IEEE 802.11]]
