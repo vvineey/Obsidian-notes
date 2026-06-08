@@ -14,7 +14,7 @@
 - [ ] [[12-2 Slotted ALOHA, CSMA IoT Access]]
 
 ## IV. Wi-Fi
-- [ ] [[W13-2_Wi-Fi IEEE 802.11]]
+- [ ] [[13-2 Wi-Fi IEEE 802.11]]
 
 ## V. Bluetooth / BLE
 - [ ] [[W14-1_Bluetooth]]
