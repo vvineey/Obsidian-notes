@@ -127,5 +127,29 @@ Router에 packet이 들어오는 속도 > 나가는 속도면  queue가 생김
 
 # 9. RED & ECN
 
+- RED (Random Early Detection) 
+  - buffer가 가득 차기 전에 확률적으로 packet drop 
+  
+- ECN (Explicit Congestion Notification) 
+  - 혼잡 발생 전에 송신자측에서 혼잡을 감지하도록 함 
+  - header에 ECN field 표시 -> 혼잡을 알림 
 
-# 10. 
+# 10. Packet Scheduling 
+
+Router의 output queue에 여러 packet중 어떤 packet을 먼저 보낼지 결정 
+
+### FCFS / FIFO
+가장 먼저 온 packet을 먼저 보냄 
+
+### Priority Scheduling 
+우선순위가 높은 queue
+
+## Round Robin
+여러 queue를 순서대로 돌아가며 하나씩 
+
+### Weighted Fair Queueing RR
+RR의 일반화 방식
+각 queue에 가중치 부여 -> 가중치가 높은 queue에 더 많은 전송 기회 부여 
+
+
+

@@ -1,7 +1,7 @@
 
 ## I. Network Layer: Data Plane
 - [ ] [[8-1 Network Layer - Data Plane]]
-- [ ] [[W8-2_IP 주소 Subnet DHCP]]
+- [ ] [[8-2  IP 주소 체계, Subnet, DHCP]]
 - [ ] [[W10-1_NAT IPv6 OpenFlow]]
 
 ## II. Network Layer: Control Plane
