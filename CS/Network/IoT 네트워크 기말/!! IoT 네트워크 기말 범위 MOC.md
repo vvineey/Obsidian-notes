@@ -5,8 +5,8 @@
 - [ ] [[10-1 NAT, IPv6, OpenFlow]]
 
 ## II. Network Layer: Control Plane
-- [ ] [[W10-2_Control Plane Routing]]
-- [ ] [[W11-1_Dijkstra Algorithm]]
+- [ ] [[10-2 Control Plane Routing]]
+- [ ] [[11-1 Dijkstra Algorithm]]
 - [ ] [[W11-2_Distance Vector SDN]]
 
 ## III. Link Layer와 IoT Access Network

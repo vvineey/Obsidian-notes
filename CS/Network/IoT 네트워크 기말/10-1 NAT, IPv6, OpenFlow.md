@@ -2,6 +2,21 @@
 
 # 요약
 
+1. **NAT**
+    - IPv4 주소 부족 문제를 완화한다.
+    - Private IP와 public IP 사이를 변환한다.
+    - IP뿐 아니라 port number도 바꾼다.
+2. **IPv6**
+    
+    - IPv4 주소 부족 문제를 해결하기 위해 128-bit 주소 사용
+    - Router 처리를 빠르게 하기 위해 header 단순화
+    - checksum, fragmentation/reassembly, option 제거
+3. **Generalized Forwarding**
+    
+    - 목적지 IP만 보는 forwarding에서 확장
+    - 다양한 header field를 match하고 action 수행
+    - Flow table, priority, OpenFlow, SDN과 연결됨
+
 
 # Network Address Translation
 
@@ -13,6 +28,7 @@ port number는 다르다.!!
 # Private IP
 NAT 내부에서는 **private IP**를 사용한다.  
 Private IP는 인터넷 전체에서 직접 routing되지 않고, local network 안에서만 의미가 있다.
+
 
 
 # NAT Translation Table
