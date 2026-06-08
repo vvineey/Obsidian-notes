@@ -42,6 +42,38 @@ router = 여러 interface를 가진 장치
 
 # Subent Mask
 
+IP 주소 = prefix + Host part 
 
-# 
+```
+192.168.0.10/24
+```
+에서 **/24** -> 앞에 24 bits : subnet part, 나머지 8bits:  host part
 
+
+
+# IP 주소 할당 방식 
+
+1. 수동 할당 
+   네트워크 관리자가 직접 입력, 관리 
+   
+2. DHCP 
+   Host가 network에 들어올 때마다 server로 부터 IP 주소를 동적으로 할당받음 
+
+
+
+# DHCP (Dynamic Host Configuration Protocol)
+Host가 network에 들어오면 DHCP server에게 IP 주소를 요청 -> server가 사용 가능한 IP 주소 임대 
+
+```
+DHCP Discover → DHCP Offer → DHCP Request → DHCP ACK
+```
+
+1. DHCP Discover 
+   
+2. DHCP Offer 
+   
+3. DHCP Request
+   
+4. DHCP ACK
+
++ 이전에 할당받은 주소를 기억하고 재사용하는 경우 Discover, Offer 생략 가능 
