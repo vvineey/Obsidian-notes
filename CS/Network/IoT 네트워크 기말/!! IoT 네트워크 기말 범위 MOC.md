@@ -7,7 +7,7 @@
 ## II. Network Layer: Control Plane
 - [ ] [[10-2 Control Plane Routing]]
 - [ ] [[11-1 Dijkstra Algorithm]]
-- [ ] [[W11-2_Distance Vector SDN]]
+- [ ] [[11-2 Distance Vector, SDN]]
 
 ## III. Link Layer와 IoT Access Network
 - [ ] [[W12-1_Link Layer Multiple Access]]
