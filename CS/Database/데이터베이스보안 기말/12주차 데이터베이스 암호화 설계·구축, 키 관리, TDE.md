@@ -208,7 +208,7 @@ KMS : Key Management System
 
 TDE : Transparent Data Encription
 
-DBMS가 데이터를 디스크에 저장할 떄 자동으로 암호화하고, 메모리로 읽을 떄 자동으로 복호화한다. 
+DBMS가 데이터를 디스크에 저장할 때 자동으로 암호화하고, 메모리로 읽을 때 자동으로 복호화한다. 
 
 
 # 13. Oracle TDE
@@ -243,11 +243,16 @@ MySQL InnoDB
 | 주요 목적     | 저장 데이터 보호                        | 저장 데이터 보호           |
 
 -> 
-Oracle과 SQL Server의 TDE는 모두 저장된 데이터를 암호화하고, 사용자가 조회할 때 DBMS 내부에서 자동으로 복호화한다는 점은 같다. 
+Oracle과 SQL Server의 TDE는 모두 저장된 데이터를 암호화하고, 사용자가 조회할 때 
+DBMS 내부에서 자동으로 복호화한다는 점은 같다. 
 
-Oracle TDE는 컬럼 암호화와 테이블스페이스 암호화를 지원하며, 실제 데이터를 암호화하는 테이블 키 또는 테이블스페이스 키를 마스터 키가 다시 암호화하여 보호한다. 즉, 데이터 암호화 키와 이를 보호하는 마스터 키가 분리된 구조이다. 마스터 키는 Wallet, Keystore, Oracle Key Vault 또는 HSM에 저장할 수 있으며, HSM을 사용하면 키가 외부 보안 장비 안에서 생성·저장되어 유출 위험을 줄일 수 있다.
+Oracle TDE는 컬럼 암호화와 테이블스페이스 암호화를 지원하며, 실제 데이터를 암호화하는 테이블 키 또는 테이블스페이스 키를 마스터 키가 다시 암호화하여 보호한다. 즉, 데이터 암호화 키와 이를 보호하는 마스터 키가 분리된 구조이다. 
+마스터 키는 Wallet, Keystore, Oracle Key Vault 또는 HSM에 저장할 수 있으며, 
+HSM을 사용하면 키가 외부 보안 장비 안에서 생성·저장되어 유출 위험을 줄일 수 있다.
 
-반면 SQL Server TDE는 주로 데이터베이스 단위로 데이터 파일과 로그 파일 전체를 암호화한다. 실제 암호화에는 DEK, 즉 Database Encryption Key가 사용되며, 이 DEK는 인증서나 비대칭키로 보호된다. SQL Server에서 HSM을 사용할 경우에는 EKM을 통해 HSM과 연동하고, DEK를 보호하는 비대칭키를 HSM에 저장하는 방식으로 동작한다.
+반면 SQL Server TDE는 주로 데이터베이스 단위로 데이터 파일과 로그 파일 전체를 암호화한다. 
+실제 암호화에는 DEK, 즉 Database Encryption Key가 사용되며, 이 DEK는 인증서나 비대칭키로 보호된다. SQL Server에서 HSM을 사용할 경우에는 EKM을 통해 HSM과 연동하고, 
+DEK를 보호하는 비대칭키를 HSM에 저장하는 방식으로 동작한다.
 
 암호화 알고리즘 측면에서 Oracle은 AES, 3DES 등 다양한 알고리즘을 지원하며, 일반적으로 AES256이 권장된다. SQL Server도 AES_128, AES_192, AES_256, 3DES 계열을 지원하며, 보통 AES_256을 사용한다.
 
