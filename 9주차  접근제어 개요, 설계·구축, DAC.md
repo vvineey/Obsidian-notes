@@ -174,5 +174,21 @@ Z가 보고서 파일의 소유자
 - 객체가 많아지면 권한 관리 복잡 
 
 
+# 7. 접근제어 행렬 (ACM)
+
+ACM : Access Control Matrix 
+
+ACM은 권한 관계를 쉽게 이해할 수 있지만 실제 시스템에서는 주체와 객체 수가 많아지면 
+행렬 대부분이 빈칸이 된다. 따라서 실제 구현에서는 Capability List 또는 ACL을 주로 사용한다.!
 
 
+# 8. Capability List와 ACL
+
+Capability List : 주체 중심 권한 목록 
+
+특정 사용자가 어떤 객체에 어떤 권한을 가지고 있는지 나타낸다.
+ACM 에서 특정 사용자의 행을 읽으면 Capability List가 된다.
+
+```
+Capabl
+```
