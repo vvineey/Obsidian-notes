@@ -200,7 +200,7 @@ Capability List(Bovin)
 ACM에서 특정 객체의 열을 읽으면 ACL이 된다.
 
 ```
-ACL (고객정보) 
+ACL(고객정보) 
 = [(Bovin, R)]
 ```
 
