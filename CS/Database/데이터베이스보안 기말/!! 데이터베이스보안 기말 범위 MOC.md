@@ -1,8 +1,8 @@
 
 ## I. 접근제어
 
-- [ ] [[9주차  접근제어 개요, 설계·구축, DAC]]
-- [ ] [[10주차 - MAC, Bell-LaPadula, Biba, RBAC, ABAC]]
+- [ ] [[9주차 접근제어 개요, 설계·구축, DAC]]
+- [ ] [[10주차 MAC, Bell-LaPadula, Biba, RBAC, ABAC]]
 
 ## II. 데이터베이스 암호화
 

@@ -184,11 +184,23 @@ ACM은 권한 관계를 쉽게 이해할 수 있지만 실제 시스템에서는
 
 # 8. Capability List와 ACL
 
-Capability List : 주체 중심 권한 목록 
+### Capability List : 주체 중심 권한 목록 
 
 특정 사용자가 어떤 객체에 어떤 권한을 가지고 있는지 나타낸다.
 ACM 에서 특정 사용자의 행을 읽으면 Capability List가 된다.
 
 ```
-Capabl
+Capability List(Bovin) 
+= [(고객정보, R), (급여정보, RW), (회계프로그램, X)]
 ```
+
+### ACL : 객체 중심 권한 목록 
+
+특정 객체에 어떤 사용자가 어떤 권한을 가지고 있는지 나타낸다.
+ACM에서 특정 객체의 열을 읽으면 ACL이 된다.
+
+```
+ACL (고객정보) 
+= [(Bovin, R)]
+```
+
