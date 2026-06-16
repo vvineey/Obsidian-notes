@@ -1,3 +1,10 @@
+---
+tags:
+  - cs/database
+  - cs/security
+  - course/database-security
+  - type/moc
+---
 
 ## I. 접근제어
 

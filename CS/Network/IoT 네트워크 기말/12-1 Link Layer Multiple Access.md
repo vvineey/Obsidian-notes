@@ -1,3 +1,12 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/lecture-note
+  - network/link-layer
+  - network/error-detection
+  - network/multiple-access
+---
 
 # Network layer  vs   Link layer
 
@@ -104,5 +113,3 @@ broadcast의 경우 두 node가 동시에 통신 -> 충돌 -> frame 손상
 ### Random access
 미리 자원을 나누지 않고 node가 보낼 data가 있으면 channel에 접근한다. 
 자원을 더 유용하게 사용할 수 있지만, 충돌을 완전히 없애지는 못함 
-
-

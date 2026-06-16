@@ -1,3 +1,14 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/lecture-note
+  - network/network-layer
+  - network/ip
+  - network/nat
+  - network/ipv6
+  - network/sdn
+---
 
 
 # 요약
@@ -66,7 +77,7 @@ IPv6는 128-bits 주소
 
 ![[Pasted image 20260608155106.png|561]]
 
-#IPv4_header 에 비해 크기가 작아짐 
+IPv4 header에 비해 크기가 작아짐 
 - checksum 없음 -> router 처리 속도 향상
 - option 없음 -> 기본 herder 단순화 
 - fragmentation/reassembly 없음 -> router 처리 단순화 

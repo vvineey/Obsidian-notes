@@ -1,3 +1,9 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/moc
+---
 
 ## I. Network Layer: Data Plane
 - [ ] [[8-1 Network Layer - Data Plane]]
@@ -24,5 +30,3 @@
 - W13-2 p24~26: 관련 연구 소개 제외
 - W14-2 p4~6: 관련 연구 소개 제외
 - W14-2 p8: 종강/시험 안내 제외
-
-

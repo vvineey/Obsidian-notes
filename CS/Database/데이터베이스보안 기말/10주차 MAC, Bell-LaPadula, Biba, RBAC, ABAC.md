@@ -1,3 +1,15 @@
+---
+tags:
+  - cs/database
+  - cs/security
+  - course/database-security
+  - type/lecture-note
+  - db/access-control
+  - security/access-control
+  - security/security-models
+  - security/rbac
+  - security/abac
+---
 
 # 1. 강제적 접근 제어 (MAC)
 

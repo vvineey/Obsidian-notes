@@ -1,3 +1,13 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/lecture-note
+  - network/link-layer
+  - network/multiple-access
+  - network/csma
+  - network/iot
+---
 
 # 1. Slotted ALOHA
 

@@ -1,3 +1,13 @@
+---
+tags:
+  - cs/database
+  - cs/security
+  - course/database-security
+  - type/lecture-note
+  - db/access-control
+  - security/access-control
+---
+
 
 
 # 1. 접근제어 
@@ -204,4 +214,3 @@ ACM에서 특정 객체의 열을 읽으면 ACL이 된다.
 ACL(고객정보) 
 = [(Bovin, R)]
 ```
-

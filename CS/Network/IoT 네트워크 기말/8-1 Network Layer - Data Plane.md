@@ -1,3 +1,12 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/lecture-note
+  - network/network-layer
+  - network/data-plane
+  - network/forwarding
+---
 
 
 
@@ -150,6 +159,4 @@ Router의 output queue에 여러 packet중 어떤 packet을 먼저 보낼지 결
 ### Weighted Fair Queueing RR
 RR의 일반화 방식
 각 queue에 가중치 부여 -> 가중치가 높은 queue에 더 많은 전송 기회 부여 
-
-
 

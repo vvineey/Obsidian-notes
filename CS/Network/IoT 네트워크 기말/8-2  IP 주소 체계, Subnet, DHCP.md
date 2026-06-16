@@ -1,3 +1,13 @@
+---
+tags:
+  - cs/network
+  - course/iot-network
+  - type/lecture-note
+  - network/network-layer
+  - network/ip
+  - network/subnetting
+  - network/dhcp
+---
 
 # 요약
 
@@ -9,7 +19,7 @@
 
 Transport layer의 segment + IP header -> IP datagram가 된다. 
 
-#IPv4_header 에는
+IPv4 header에는
 - source IP address
 - destination IP address
 - TTL : router를 지날 때마다 하나씩 감소 0이 되면 폐기 
