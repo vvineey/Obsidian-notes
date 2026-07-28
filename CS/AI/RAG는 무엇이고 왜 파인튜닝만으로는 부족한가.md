@@ -118,13 +118,13 @@ RAG의 핵심 파이프라인은 크게 3단계로 볼 수 있다.
 
 이 단계에서 자주 생기는 문제는 다음과 같다.
 
-| 문제 | 설명 |
-| --- | --- |
-| Query ambiguity | 질문이 짧거나 모호해서 엉뚱한 문서가 검색됨 |
+| 문제                | 설명                                  |
+| ----------------- | ----------------------------------- |
+| Query ambiguity   | 질문이 짧거나 모호해서 엉뚱한 문서가 검색됨            |
 | Semantic mismatch | 의미는 비슷하지만 실제 답과 관련 없는 문서가 높은 점수를 받음 |
-| Recall 부족 | 필요한 문서가 top-k 안에 들어오지 않음 |
-| Precision 부족 | 검색 결과는 많지만 잡음이 많아 생성 품질이 떨어짐 |
-| 권한 필터 누락 | 사용자가 볼 수 없는 문서가 컨텍스트로 들어갈 수 있음 |
+| Recall 부족         | 필요한 문서가 top-k 안에 들어오지 않음            |
+| Precision 부족      | 검색 결과는 많지만 잡음이 많아 생성 품질이 떨어짐        |
+| 권한 필터 누락          | 사용자가 볼 수 없는 문서가 컨텍스트로 들어갈 수 있음      |
 
 #### 3단계: Generation
 
@@ -150,17 +150,17 @@ RAG의 핵심 파이프라인은 크게 3단계로 볼 수 있다.
 
 ### 4. 구성 요소
 
-| 구성 요소 | 역할 |
-| --- | --- |
+| 구성 요소           | 역할                                      |
+| --------------- | --------------------------------------- |
 | Document loader | 원본 문서를 가져온다. 예: Markdown, PDF, 웹페이지, DB |
-| Text splitter | 문서를 검색하기 좋은 chunk로 나눈다 |
-| Embedding model | 텍스트를 의미 벡터로 변환한다 |
-| Vector DB | 벡터와 원문, metadata를 저장하고 유사도 검색을 수행한다 |
-| Retriever | 질문에 맞는 후보 문서를 가져온다 |
-| Reranker | 후보 문서의 관련도를 다시 평가해 순서를 개선한다 |
-| Prompt builder | 검색 결과를 모델 입력 컨텍스트로 구성한다 |
-| Generator | LLM이 최종 답변을 생성한다 |
-| Evaluator | 검색 품질과 답변 품질을 평가한다 |
+| Text splitter   | 문서를 검색하기 좋은 chunk로 나눈다                  |
+| Embedding model | 텍스트를 의미 벡터로 변환한다                        |
+| Vector DB       | 벡터와 원문, metadata를 저장하고 유사도 검색을 수행한다     |
+| Retriever       | 질문에 맞는 후보 문서를 가져온다                      |
+| Reranker        | 후보 문서의 관련도를 다시 평가해 순서를 개선한다             |
+| Prompt builder  | 검색 결과를 모델 입력 컨텍스트로 구성한다                 |
+| Generator       | LLM이 최종 답변을 생성한다                        |
+| Evaluator       | 검색 품질과 답변 품질을 평가한다                      |
 
 ### 5. 예시
 
@@ -192,18 +192,18 @@ RAG의 핵심 파이프라인은 크게 3단계로 볼 수 있다.
 
 벡터DB 검색 품질은 단순히 좋은 DB를 쓰는 것보다 데이터 준비, 검색 전략, 평가 체계를 함께 개선해야 좋아진다.
 
-| 방법 | 설명 |
-| --- | --- |
-| Chunk size 조정 | 문서 구조에 맞게 chunk 크기와 overlap을 조절한다 |
-| 구조 기반 chunking | 제목, 섹션, 표, 코드 블록 단위로 의미가 끊기지 않게 나눈다 |
-| Metadata 강화 | 서비스명, 버전, 날짜, 권한, 문서 타입 등을 저장해 필터링한다 |
-| Hybrid search | vector search와 BM25/keyword search를 결합해 의미 검색과 정확한 용어 검색을 모두 챙긴다 |
-| Query rewriting | 짧거나 모호한 사용자 질문을 검색에 적합하게 재작성한다 |
-| Multi-query retrieval | 여러 관점의 query를 만들어 recall을 높인다 |
-| Reranking | top-k 후보를 cross-encoder나 LLM reranker로 재정렬한다 |
-| Deduplication | 중복 chunk를 제거해 컨텍스트 낭비를 줄인다 |
-| Domain-specific embedding | 도메인 용어가 중요한 경우 적합한 embedding model을 선택하거나 학습한다 |
-| Evaluation set 관리 | 실제 질문-정답-근거 문서 쌍으로 검색 품질을 지속 측정한다 |
+| 방법                        | 설명                                                               |
+| ------------------------- | ---------------------------------------------------------------- |
+| Chunk size 조정             | 문서 구조에 맞게 chunk 크기와 overlap을 조절한다                                |
+| 구조 기반 chunking            | 제목, 섹션, 표, 코드 블록 단위로 의미가 끊기지 않게 나눈다                              |
+| Metadata 강화               | 서비스명, 버전, 날짜, 권한, 문서 타입 등을 저장해 필터링한다                             |
+| Hybrid search             | vector search와 BM25/keyword search를 결합해 의미 검색과 정확한 용어 검색을 모두 챙긴다 |
+| Query rewriting           | 짧거나 모호한 사용자 질문을 검색에 적합하게 재작성한다                                   |
+| Multi-query retrieval     | 여러 관점의 query를 만들어 recall을 높인다                                    |
+| Reranking                 | top-k 후보를 cross-encoder나 LLM reranker로 재정렬한다                     |
+| Deduplication             | 중복 chunk를 제거해 컨텍스트 낭비를 줄인다                                       |
+| Domain-specific embedding | 도메인 용어가 중요한 경우 적합한 embedding model을 선택하거나 학습한다                   |
+| Evaluation set 관리         | 실제 질문-정답-근거 문서 쌍으로 검색 품질을 지속 측정한다                                |
 
 검색 품질을 평가할 때는 다음 지표를 볼 수 있다.
 
