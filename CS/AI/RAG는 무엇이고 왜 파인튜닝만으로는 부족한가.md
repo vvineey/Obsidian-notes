@@ -243,7 +243,7 @@ RAG 시스템은 모델보다 데이터 파이프라인에서 문제가 많이 �
 ## 관련 개념 링크
 
 - [[MCP는 무엇이고 왜 필요한가?|MCP]]
-- 후보: [[Vector DB]], [[Embedding]], [[Fine-tuning]], [[BM25]], [[Prompt Injection]], [[LLM 평가]], [[검색 시스템]]
+- 후보: [[Vector DB는 무엇이고 유사도 검색은 어떻게 동작하는가?]], [[Embedding]], [[Fine-tuning]], [[BM25]], [[Prompt Injection]], [[LLM 평가]], [[검색 시스템]]
 
 ## 꼬리 질문과 답변
 
