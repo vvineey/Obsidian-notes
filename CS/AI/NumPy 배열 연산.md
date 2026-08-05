@@ -61,4 +61,4 @@ Python 반복문으로 수치 데이터를 하나씩 처리하면 코드가 길�
 
 ## 관련 강의
 
-- [[Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]
+- [[00 Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]

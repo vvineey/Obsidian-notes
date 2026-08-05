@@ -56,4 +56,4 @@ API 응답은 중첩된 `list`와 `dict`로 다루며, 데이터 정제 과정�
 
 ## 관련 강의
 
-- [[Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]
+- [[00 Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]

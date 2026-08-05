@@ -2,7 +2,7 @@
 date: 2026-08-04
 course: SSAFY AI
 day: DAY 1
-title: 26.08.04 - Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초
+title: 00 Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초
 status: approved
 tags:
   - cs/ai
@@ -24,7 +24,7 @@ sources:
   - "AI 강의/26.08.04 /DAY 1/Day01/배포용/실습2_NumPy와Pandas/실습2_김보빈.ipynb"
 ---
 
-# Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초
+# 00 Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초
 
 > [!summary] 오늘의 핵심
 > Python의 기본 문법으로 데이터를 표현하고 가공한 뒤, 외부 API의 JSON 응답을 표 형태와 LLM 컨텍스트로 변환하는 흐름을 학습했다. 이어서 NumPy의 배열 연산과 Pandas의 표 데이터 처리를 이용해 수치 데이터를 조회하고 필터링하고 집계하는 방법을 익혔다.

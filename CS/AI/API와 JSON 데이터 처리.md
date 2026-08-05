@@ -59,4 +59,4 @@ LLM 요청에는 모델, 메시지와 컨텍스트, 생성 옵션 등이 포함�
 
 ## 관련 강의
 
-- [[Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]
+- [[00 Python에서 API·NumPy·Pandas로 이어지는 데이터 처리 기초]]
