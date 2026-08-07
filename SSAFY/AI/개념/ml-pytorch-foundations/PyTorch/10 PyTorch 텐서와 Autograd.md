@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-08-07
 course: SSAFY AI
 title: 10 PyTorch 텐서와 Autograd

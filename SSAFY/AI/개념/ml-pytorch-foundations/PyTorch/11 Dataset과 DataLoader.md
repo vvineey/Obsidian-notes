@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-08-07
 course: SSAFY AI
 title: 11 Dataset과 DataLoader

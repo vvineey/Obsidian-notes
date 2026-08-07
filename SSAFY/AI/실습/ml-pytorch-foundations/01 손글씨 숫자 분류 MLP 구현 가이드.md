@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-08-07
 course: SSAFY AI
 title: 01 손글씨 숫자 분류 MLP 구현 가이드

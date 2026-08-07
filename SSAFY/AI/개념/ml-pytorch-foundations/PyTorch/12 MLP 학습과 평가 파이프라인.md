@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-08-07
 course: SSAFY AI
 title: 12 MLP 학습과 평가 파이프라인

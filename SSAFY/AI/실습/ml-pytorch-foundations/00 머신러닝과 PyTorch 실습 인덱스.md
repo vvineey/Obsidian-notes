@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-08-07
 course: SSAFY AI
 title: 머신러닝과 PyTorch 실습 인덱스
