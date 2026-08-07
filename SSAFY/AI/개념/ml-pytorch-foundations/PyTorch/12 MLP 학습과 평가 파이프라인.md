@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 12 MLP 학습과 평가 파이프라인
-status: approved
-repository: machine-learning-and-pytorch
+status: needs-review
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/concept-note
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
   - ai/mlp
   - ai/model-training
   - ai/model-evaluation
@@ -140,4 +140,3 @@ Validation 성능이 개선될 때 모델의 `state_dict`를 저장한다. 지�
 - [[10 PyTorch 텐서와 Autograd]]: Tensor 계약과 자동 미분을 구현한다.
 - [[11 Dataset과 DataLoader]]: 학습·평가 루프에 배치를 공급한다.
 - [[01 손글씨 숫자 분류 MLP 구현 가이드]]: 전체 개념을 하나의 Digits 분류 실습으로 연결한다.
-

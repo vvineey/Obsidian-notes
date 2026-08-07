@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 10 PyTorch 텐서와 Autograd
-status: approved
-repository: machine-learning-and-pytorch
+status: needs-review
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/concept-note
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
   - ai/pytorch
   - ai/autograd
 concepts:
@@ -116,4 +116,3 @@ NumPy와 Tensor가 메모리를 공유할 수 있으므로 한쪽의 변경이 �
 - [[11 Dataset과 DataLoader]]: Tensor를 샘플과 배치 단위로 공급한다.
 - [[12 MLP 학습과 평가 파이프라인]]: Autograd 결과를 optimizer step으로 연결한다.
 - [[01 손글씨 숫자 분류 MLP 구현 가이드]]: 실제 TODO에서 shape·dtype·device 계약을 적용한다.
-

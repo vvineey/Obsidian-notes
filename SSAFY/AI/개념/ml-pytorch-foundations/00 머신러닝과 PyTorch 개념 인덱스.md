@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 머신러닝과 PyTorch 개념 인덱스
 status: active
-repository: machine-learning-and-pytorch
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/concept-index
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
 ---
 
 # 머신러닝과 PyTorch 개념 인덱스
@@ -40,4 +40,3 @@ tags:
 ## 관련 실습
 
 - [[01 손글씨 숫자 분류 MLP 구현 가이드]]
-

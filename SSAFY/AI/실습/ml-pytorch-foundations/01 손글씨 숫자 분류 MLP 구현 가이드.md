@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 01 손글씨 숫자 분류 MLP 구현 가이드
 status: planned
-repository: machine-learning-and-pytorch
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/practice-guide
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
   - ai/pytorch
   - ai/mlp
   - ai/classification

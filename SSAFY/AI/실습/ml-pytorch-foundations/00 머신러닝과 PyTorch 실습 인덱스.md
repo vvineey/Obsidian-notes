@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 머신러닝과 PyTorch 실습 인덱스
 status: active
-repository: machine-learning-and-pytorch
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/practice-index
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
 ---
 
 # 머신러닝과 PyTorch 실습 인덱스
@@ -44,4 +44,3 @@ tags:
 - GitHub: 생성 후 URL 연결
 - 공개 원칙: 학습자가 직접 작성한 코드·노트·테스트·실험 결과만 포함
 - 제외 대상: 원본 문제·정답 노트북, 교육 자료, 비밀값, 체크포인트와 모델 가중치
-

@@ -1,13 +1,13 @@
----
+﻿---
 date: 2026-08-07
 course: SSAFY AI
 title: 11 Dataset과 DataLoader
-status: approved
-repository: machine-learning-and-pytorch
+status: needs-review
+repository: ml-pytorch-foundations
 tags:
   - course/ssafy-ai
   - type/concept-note
-  - repo/machine-learning-and-pytorch
+  - repo/ml-pytorch-foundations
   - ai/pytorch
   - data/pipeline
 concepts:
@@ -101,4 +101,3 @@ print(yb.shape, yb.dtype)
 - [[10 PyTorch 텐서와 Autograd]]: DataLoader가 공급하는 값의 자료형과 device 계약을 확인한다.
 - [[12 MLP 학습과 평가 파이프라인]]: loader의 반복 결과가 학습·평가 루프의 입력이 된다.
 - [[01 손글씨 숫자 분류 MLP 구현 가이드]]: TODO 2에서 TensorDataset과 DataLoader를 직접 구성한다.
-
